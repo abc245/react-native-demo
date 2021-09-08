@@ -1,4 +1,4 @@
-package com.bytedance.cvsdk.reactnativedemo;
+package com.abc000.ImageShare;
 import android.content.res.Configuration;
 import android.content.Intent;
 

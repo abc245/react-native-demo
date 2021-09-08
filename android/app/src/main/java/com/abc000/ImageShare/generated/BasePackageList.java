@@ -1,4 +1,4 @@
-package com.bytedance.cvsdk.reactnativedemo.generated;
+package com.abc000.ImageShare.generated;
 
 import java.util.Arrays;
 import java.util.List;

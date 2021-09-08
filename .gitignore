@@ -6,7 +6,7 @@ node_modules/
 # OSX
 #
 .DS_Store
-
+ios/
 # Xcode
 #
 build/
