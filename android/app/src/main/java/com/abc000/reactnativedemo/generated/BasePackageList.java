@@ -1,4 +1,4 @@
-package com.abc000.ImageShare.generated;
+package com.abc000.reactnativedemo.generated;
 
 import java.util.Arrays;
 import java.util.List;

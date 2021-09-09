@@ -1,4 +1,4 @@
-package com.abc000.ImageShare;
+package com.abc000.reactnativedemo;
 import android.content.res.Configuration;
 import android.content.Intent;
 
