@@ -5,11 +5,21 @@ import { Image, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
+import {NativeModules} from 'react-native';
+
+
+const {BridgeApplicationModule} = NativeModules;
+
 import * as ImagePicker from 'expo-image-picker'
 import * as Sharing from 'expo-sharing'
 import logo from './assets/logo.png'
 
 export default function App() {
+
+  
+  const runNativeCode = () => {
+      BridgeApplicationModule.runNativeCode("Hello from Native Code!")
+  };
 
   const [selectedImage, setSelectedImage] = React.useState(null);
   let openImagePickerAsync = async () => {
@@ -63,6 +73,9 @@ export default function App() {
         </Text>
         <TouchableOpacity onPress={openImagePickerAsync} style={styles.button}>
           <Text style={styles.buttonText}>Pick a photo</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => runNativeCode()} style={styles.button}>
+          <Text style={styles.buttonText}>Run native code</Text>
         </TouchableOpacity>
       </View>
     )
