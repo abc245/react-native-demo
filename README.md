@@ -8,3 +8,6 @@ Make sure to add local.properties file in the `./android` folder with the follow
 `sdk.dir=ANDROID_HOME`
 
 Also follow the instructions to setup ANDROID_HOME environment variable [https://reactnative.dev/docs/environment-setup#installing-dependencies](https://reactnative.dev/docs/environment-setup#installing-dependencies)
+
+![](assets/video.gif)
+
